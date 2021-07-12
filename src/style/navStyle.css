@@ -1,0 +1,355 @@
+.nav {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: row wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 30%;
+  cursor: pointer;
+}
+.logo img {
+  width: 40%;
+}
+.navItem {
+  width: 60%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: row wrap;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+.navItem span {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.1rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+  background-color: #000;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.linked {
+  /* width: 25%; */
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  transition: 0.3s;
+}
+.linked p {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* position: absolute; */
+  /* top: 50%; */
+  line-height: 8;
+}
+.navItem .linked:nth-child(1):hover::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  width: 0.1rem;
+  height: 0.5rem;
+  background-color: #000;
+  transition: all 200ms ease-in-out;
+}
+.navItem .linked:nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 4%;
+  width: 0.1rem;
+  height: 0.5rem;
+  background-color: #000;
+  transition: all 200ms ease-in-out;
+}
+.navItem .linked:nth-child(3):hover::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 5%;
+  width: 0.1rem;
+  height: 0.5rem;
+  background-color: #000;
+  transition: all 200ms ease-in-out;
+}
+.link_1 ul {
+  display: none;
+  list-style-type: none;
+  background-color: #1c3988;
+  color: #fff;
+  padding: 0 1rem;
+  width: 10rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  position: absolute;
+  top: 134%;
+  right: 3%;
+}
+.link_1 ul li {
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+.link_1 ul li:hover {
+  color: rgb(184, 170, 170);
+}
+.link_1:hover ul {
+  display: block;
+  transform: translate(0, -28%);
+}
+.link_2 ul {
+  display: none;
+  list-style-type: none;
+  background-color: #1c3988;
+  color: #fff;
+  padding: 0 1rem;
+  width: 12rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  position: absolute;
+  top: 140%;
+  right: 3%;
+}
+
+.link_2 ul li {
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+.link_2 ul li:hover {
+  color: rgb(184, 170, 170);
+}
+.link_2:hover ul {
+  display: block;
+  transform: translate(0, -21%);
+}
+.link_3 ul {
+  display: none;
+  list-style-type: none;
+  background-color: #1c3988;
+  color: #fff;
+  padding: 0 1rem;
+  width: 10rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  position: absolute;
+  top: 134%;
+  right: 3%;
+}
+
+.link_3 ul li {
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+.link_3 ul li:hover {
+  color: rgb(184, 170, 170);
+}
+.link_3:hover ul {
+  display: block;
+  transform: translate(0, -85%);
+}
+.navItem .link_4 button {
+  background-color: #1c3988;
+  color: #fff;
+  padding: 1rem 1rem 0.8rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.navItem .link_4 button:hover{
+  background-color: #245bdd;
+}
+.link_5 {
+  cursor: pointer;
+}
+.navItem .link_5 button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 2rem;
+  color: rgb(54, 28, 204);
+ 
+}
+
+.hamburger {
+  position: fixed;
+  /* right: 50%; */
+  background-color: #fff;
+  right: 0;
+  top: 0;
+  width: 32rem;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  transition: all 300ms ease-in-out;
+}
+.hamLogo {
+  height: 10%;
+  /* border: 1px solid black; */
+}
+.hamLogo button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 3rem;
+  color: rgb(54, 28, 204);
+  float: right;
+  line-height: 1.5;
+  margin-right: 3rem;
+}
+.hamburger .same {
+  width: 85%;
+  margin: 2rem auto;
+  /* position: relative; */
+}
+.hamMainLogo img {
+  width: 40%;
+  cursor: pointer;
+  padding: 1.5rem 0;
+}
+.hamInfo {
+  padding-bottom: 0.5rem;
+}
+
+.hamInfo p {
+  font-size: 1.2rem;
+}
+
+.hamLoc h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.hamLoc h2:nth-child(1) {
+  font-size: 1.2rem;
+}
+.hamLoc h2 span {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.hamIcon {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: start;
+  align-items: center;
+}
+.hamIcon span {
+  display: inline-block;
+  font-size: 2rem;
+  color: #1c3988;
+  padding: 1rem;
+}
+.hamIcon span:nth-child(1) {
+  padding-left: 0;
+}
+.navigation {
+  display: none;
+  
+}
+.navigation button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+}
+.navDiv {
+  background-color: #1c3988;
+  width: 60vw;
+  position: absolute;
+  top: 100%;
+  right: 16%;
+  transition: all 0.2s ease-in-out;
+}
+
+.navDiv ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.navDiv ul li {
+  color: #fff;
+
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+/* .navDiv ul li:focus{
+  outline: none!important;
+} */
+.opt_1:nth-child(1),
+.opt_1:nth-child(2) {
+  border-bottom: 1px solid rgba(190, 184, 184, 0.287);
+}
+.opt_1 {
+  text-align: center;
+}
+.opt_1:nth-child(3) {
+  line-height: 2.2;
+}
+.opt_1:nth-child(1) {
+  line-height: 2;
+}
+.opt_1:nth-child(2) {
+  line-height: 3;
+}
+.navLink_1 li,
+.navLink_2 li,
+.navLink_3 li {
+  font-size: 1.1rem !important;
+  color: #000 !important;
+  margin-left: 1rem;
+  padding: 1rem 0;
+}
+.navLink_1,
+.navLink_2,
+.navLink_3 {
+  padding-left: 0;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1010px) {
+  .navItem {
+    display: none;
+  }
+  .nav {
+    /* border: 1px solid black; */
+    height: 5rem;
+  }
+  .logo {
+    width: 45%;
+    cursor: pointer;
+  }
+  .navigation {
+    display: block;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .navItem {
+    display: none;
+  }
+  .nav {
+    /* border: 1px solid black; */
+    height: 5rem;
+  }
+  .logo {
+    width: 45%;
+    cursor: pointer;
+  }
+  .navigation {
+    display: block;
+  }
+}

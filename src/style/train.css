@@ -1,0 +1,157 @@
+.mainTrain {
+  width: 100%;
+  height: auto;
+  
+}
+.trainContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  justify-items: center;
+  align-items: center;
+ 
+
+}
+.div_1{
+    margin: 0 auto;
+}
+.div_1 h1{
+    font-size: 2.3rem;
+    font-weight: 900;
+    width: 90%;
+}
+.div_1 p{
+    font-size: 1.1rem;
+    color: #363636;
+    padding-top: 1rem;
+    
+}
+.div_1 h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+.div_1 h4 span{
+    display: inline-block;
+    color: rgb(98, 98, 202);
+    padding-right: .5rem;
+}
+.div_1 button{
+    background-color: #106EEA;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: .3rem;
+    margin-top: 2rem;
+}
+.div_1 button:hover{
+    background-color: #106eeaad;
+}
+.div_2 img{
+    width: 80%;
+}
+
+.trainFooter{
+    width: 100%;
+    height: auto;
+    background-color: rgb(42, 42, 221);
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+
+   
+}
+.trainFooter div{
+    margin: 4rem auto;
+   color: #fff;
+   text-align: center;
+}
+
+.trainFooter div img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.trainFooter h1{
+    font-size: 3rem;
+}
+
+.trainFooter div p{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width:1140px){
+    .trainFooter{
+      
+    
+        grid-template-columns: repeat(2,1fr);
+        
+        
+    }
+}
+@media only screen and (max-width:992px){
+    .trainContainer {
+        /* width: 80%;
+        display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 4rem;
+        
+      
+      }
+      .div_1 h1{
+        font-size: 2rem;
+        
+    }
+      .div_2{
+          display: none;
+      }
+      .div_2 img{
+        width: 100%;
+    }
+    .trainFooter{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+     
+
+}
+
+@media only screen and (max-width:582px){
+    .trainFooter{
+      
+    
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

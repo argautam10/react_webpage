@@ -1,0 +1,126 @@
+.hicoderContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5rem auto;
+}
+
+.hicoderContainer .Div_1 {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hicoderContainer .Div_2 {
+  width: 50%;
+}
+
+.hicoderContainer .Div_2 img {
+  width: 90%;
+  height: 70vh;
+}
+.hicoderContainer .mindiv_1 {
+  width: 80%;
+}
+
+.hicoderContainer .mindiv_1 h1 {
+  font-weight: 700;
+  margin-top: -0.5rem;
+}
+/* .hicoderContainer .mindiv_1 p {
+  margin-top: -1rem;
+} */
+.hicoderContainer .mindiv_1 p span a {
+  text-decoration: none;
+  color: #106eea;
+}
+.hicoderContainer .mindiv_2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.hicoderContainer .mindiv_2 div:nth-child(1) {
+  width: 25%;
+}
+.hicoderContainer .mindiv_2 div:nth-child(2) {
+  width: 75%;
+}
+.hicoderContainer .mindiv_2 img {
+  width: 90%;
+
+}
+.hicoderContainer .mindiv_2 p {
+  margin-top: -0.5rem;
+}
+.hicoderContainer .mindiv_3 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.hicoderContainer .mindiv_3 div:nth-child(1) {
+  width: 25%;
+}
+.hicoderContainer .mindiv_3 div:nth-child(2) {
+  width: 75%;
+}
+.hicoderContainer .mindiv_3 img {
+  width: 90%;
+}
+.hicoderContainer .mindiv_3 p {
+  margin-top: -0.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hicoderContainer .Div_2 img {
+    width: 90%;
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .hicoderContainer {
+    width: 70%;
+    flex-flow: column-reverse wrap;
+  }
+  .hicoderContainer .Div_1 {
+    width: 100%;
+  }
+  .hicoderContainer .Div_2 {
+    width: 100%;
+  }
+  .hicoderContainer .Div_2 img {
+    width: 100%;
+    height: 80vh;
+  }
+  .hicoderContainer .mindiv_1 {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .hicoderContainer .mindiv_1 h1 {
+    margin-bottom: 2rem;
+  }
+  .hicoderContainer .mindiv_2 {
+    width: 100%;
+  }
+  .hicoderContainer .mindiv_3 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .hicoderContainer .Div_2 img {
+    height: 50vh;
+  }
+  .hicoderContainer {
+    width: 90%;
+    
+  }
+
+}

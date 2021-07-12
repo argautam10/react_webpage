@@ -1,0 +1,84 @@
+.aboutContainer {
+  width: 100%;
+  min-height: 80%;
+  position: relative;
+}
+.aboutContainer img {
+  width: 100%;
+  height: 100%;
+}
+.aboutContainer .para {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+.para p {
+  color: #1c3988;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.para h1 {
+  font-weight: bolder;
+  font-size: 3.5rem;
+  width: 55%;
+  margin-top: -0.5rem;
+}
+.para button {
+  padding: 1rem 2.5rem;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+  /* border: none; */
+  border-color: #1c3988;
+}
+.para button:hover {
+  background-color: #1c3988;
+  color: #fff;
+}
+.aboutFooter {
+  width: 100%;
+  height: 7rem;
+  background-color: #1c3988;
+  position: absolute;
+  bottom: 0;
+}
+.aboutFooter h2 {
+  color: #fff;
+  line-height: 2.5;
+  margin-left: 10%;
+  font-weight: 400;
+}
+.aboutFooter h2 span {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 1244px) {
+  .para h1 {
+    font-size: 2.8rem;
+  }
+  .aboutContainer .para {
+    top: 27%;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .para h1 {
+    font-size: 2rem;
+  }
+  .aboutContainer .para {
+    top: 23%;
+  }
+}
+@media only screen and (max-width: 703px) {
+  .para h1 {
+   display: none;
+  }
+  .aboutContainer .para {
+    top: 17%;
+  }
+  .para button{
+    padding: 0.5rem 1.5rem;
+    font-size: .8rem;
+  }
+}

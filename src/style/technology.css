@@ -1,0 +1,80 @@
+.techContainer {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.techDiv_1 {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.techDiv_1 p {
+  color: #999999;
+}
+.techDiv_1 h1 {
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+.techDiv_1 h1:nth-child(3) {
+  color: blue;
+}
+.techDiv_2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 3rem;
+ 
+}
+.techCard {
+  text-align: center;
+  box-shadow: 0 5px 20px 5px rgb(240, 231, 231);
+  transition: all 300ms ease-in-out;
+}
+.techImg {
+  width: 8rem !important;
+  height: 8rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+.techCard:hover{
+    margin-top: -1rem;
+    /* transition: all 300ms ease-in-out; */
+}
+
+@media only screen and (max-width: 1390px){
+    .techDiv_2 {
+        
+        grid-template-columns: repeat(3, 1fr);
+        
+      }
+}
+@media only screen and (max-width: 1040px){
+    .techDiv_2 {
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+      }
+      .techCard {
+       
+        transition: none;
+      }
+      .techCard:hover{
+        margin-top: 0;
+        /* transition: all 300ms ease-in-out; */
+    }
+}
+@media only screen and (max-width: 684px){
+    .techDiv_2 {
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+      }
+      .techCard {
+       
+       width: 100%!important;
+      }
+      .techImg {
+          margin: 1rem auto;
+      }
+}
